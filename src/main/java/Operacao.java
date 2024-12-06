@@ -9,10 +9,5 @@ public abstract class Operacao {
         return descricao;
     }
 
-    @Override
-    public String toString() {
-        return "Operacao{" +
-                "descricao='" + descricao + '\'' +
-                '}';
-    }
+    public abstract void executar();
 }

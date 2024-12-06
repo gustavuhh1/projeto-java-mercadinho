@@ -1,12 +1,16 @@
 public abstract class Pessoa {
-    protected String nome;
-    protected int id;
-    protected String cpf;
+    private int id;
+    private String nome;
+    private String cpf;
 
-    public Pessoa(String nome, int id, String cpf) {
-        this.nome = nome;
+    public Pessoa(int id,String nome, String cpf) {
         this.id = id;
+        this.nome = nome;
         this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     @Override
@@ -17,4 +21,10 @@ public abstract class Pessoa {
                 ", cpf='" + cpf + '\'' +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public abstract void exibirInformacoes();
 }

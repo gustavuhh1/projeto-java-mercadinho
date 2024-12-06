@@ -1,16 +1,16 @@
 public abstract class Produto {
-    private int id;
-    private String nome;
-    private double preco;
+    protected int idProduct;
+    protected String nome;
+    protected double preco;
 
-    public Produto(int id, String nome, double preco) {
-        this.id =  id;
+    public Produto(int idProduct, String nome, double preco) {
+        this.idProduct =  idProduct;
         this.nome = nome;
         this.preco = preco;
     }
 
     public int getId() {
-        return id;
+        return idProduct;
     }
 
     public String getNome() {

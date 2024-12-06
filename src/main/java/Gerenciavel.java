@@ -1,4 +1,4 @@
 public interface Gerenciavel {
     void adicionarItem(Produto produto);
-    void removerItem(String nomeProduto) throws ProdutoNotFindException;
+    void removerItem(int idProduct, String nomeProduto) throws ProdutoNotFindException;
 }

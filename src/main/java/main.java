@@ -1,16 +1,15 @@
-public class Main {
+public class main {
     public static void main(String[] args) {
-        try {
+        try  {
             Cliente cliente = new Cliente(1,"João", "123.456.789-00", 200.0);
             CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-            ProdutoConcreto produto1 = new ProdutoConcreto(1, "Arroz", 20.0);
-            ProdutoConcreto produto2 = new ProdutoConcreto(2,"Feijão", 15.0);
-
             cliente.exibirInformacoes();
 
-            carrinho.adicionarItem(produto1);
-            carrinho.adicionarItem(produto2);
+            carrinho.adicionarItem();
+            carrinho.adicionarItem();
+
+            carrinho.removerItem(5);
 
             double total = carrinho.calcularTotal();
             System.out.println("Total do carrinho: R$ " + total);

@@ -21,5 +21,14 @@ public abstract class Produto {
         return preco;
     }
 
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "idProduct=" + idProduct +
+                ", nome='" + nome + '\'' +
+                ", preco:" + preco +
+                "R$ }";
+    }
+
     public abstract double calcularPrecoFinal();
 }

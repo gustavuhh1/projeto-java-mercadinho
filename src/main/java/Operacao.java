@@ -9,5 +9,4 @@ public abstract class Operacao {
         return descricao;
     }
 
-    public abstract void executar();
 }

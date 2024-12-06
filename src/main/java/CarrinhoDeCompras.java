@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CarrinhoDeCompras implements Gerenciavel {
+public abstract class CarrinhoDeCompras implements Gerenciavel {
     private List<Produto> produtos = new ArrayList<>();
 
     public void adicionarItem() {

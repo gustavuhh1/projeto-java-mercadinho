@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Venda extends Operacao implements Processo{
     protected int id;
     protected CarrinhoDeCompras carrinho;
@@ -21,7 +23,6 @@ public class Venda extends Operacao implements Processo{
 
         cliente.realizarPagamento(valorTotal);
         vendaConcluida = true;
-        System.out.println("Venda realizada com sucesso!");
 
     }
 

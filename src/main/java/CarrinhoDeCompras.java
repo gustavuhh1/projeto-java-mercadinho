@@ -34,4 +34,11 @@ public  class CarrinhoDeCompras implements Gerenciavel {
     public double calcularTotal() {
         return produtos.stream().mapToDouble(Produto::calcularPrecoFinal).sum();
     }
+
+    @Override
+    public String toString() {
+        return "CarrinhoDeCompras{" +
+                "produtos=" + produtos +
+                '}';
+    }
 }

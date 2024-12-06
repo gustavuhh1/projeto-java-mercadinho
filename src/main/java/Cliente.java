@@ -1,13 +1,17 @@
 public class Cliente extends Pessoa implements Pagavel {
     private double saldo;
 
-    public Cliente(int id, String nome, String cpf, double saldoInicial) {
+    public Cliente(int id, String nome, String cpf) {
         super(id, nome, cpf);
-        this.saldo = saldoInicial;
+        this.saldo = 0;
     }
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
 

@@ -13,8 +13,13 @@ public abstract class Pessoa {
         return nome;
     }
 
-    public String getCpf() {
-        return cpf;
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", id=" + id +
+                ", cpf='" + cpf + '\'' +
+                '}';
     }
 
     public int getId() {
